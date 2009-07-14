@@ -140,6 +140,7 @@ public class NavigationView extends ViewPart {
 		viewer.setContentProvider(new ViewContentProvider());
 		viewer.setLabelProvider(new ViewLabelProvider());
 		viewer.setInput(createDummyModel());
+		getSite().setSelectionProvider(viewer);
 	}
 
 	/**

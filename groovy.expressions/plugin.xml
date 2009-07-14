@@ -54,6 +54,15 @@
             categoryId="groovy.expressions.category"
             id="groovy.expressions.openMessage">
       </command>
+      <category
+            id="groovy.expressions.commands.category"
+            name="Sample Category">
+      </category>
+      <command
+            categoryId="groovy.expressions.commands.category"
+            id="groovy.expressions.commands.sampleCommand"
+            name="Sample Command (Classic)">
+      </command>
    </extension>
    <extension
          point="org.eclipse.ui.bindings">
@@ -71,6 +80,12 @@
             commandId="org.eclipse.ui.file.exit"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
             sequence="CTRL+X">
+      </key>
+      <key
+            commandId="groovy.expressions.commands.sampleCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+6">
       </key>
    </extension>
    <extension
@@ -92,6 +107,59 @@
                value="product_lg.gif">
          </property>
       </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="groovy.expressions.handlers.SampleClassicHandler"
+            commandId="groovy.expressions.commands.sampleCommand">
+         <enabledWhen>
+            <or>
+               <with
+                     variable="activePartId">
+                  <not>
+	                  <equals
+	                        value="groovy.expressions.navigationView">
+	                  </equals>
+                  </not>
+               </with>
+               <with
+                     variable="selection">
+                  <count
+                        value="2">
+                  </count>
+               </with>
+            </or>
+         </enabledWhen>
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="groovy.expressions.menus.sampleMenu"
+               label="Sample Menu"
+               mnemonic="M">
+            <command
+                  commandId="groovy.expressions.commands.sampleCommand"
+                  id="groovy.expressions.menus.sampleCommand"
+                  mnemonic="S">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="groovy.expressions.toolbars.sampleToolbar">
+            <command
+                  commandId="groovy.expressions.commands.sampleCommand"
+                  icon="icons/sample.gif"
+                  id="groovy.expressions.toolbars.sampleCommand"
+                  tooltip="Say hello world">
+            </command>
+         </toolbar>
+      </menuContribution>
    </extension>
 
 </plugin>
