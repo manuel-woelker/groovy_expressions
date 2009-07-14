@@ -63,6 +63,11 @@
             id="groovy.expressions.commands.sampleCommand"
             name="Sample Command (Classic)">
       </command>
+      <command
+            categoryId="groovy.expressions.commands.category"
+            id="groovy.expressions.commands.sampleCommandGroovy"
+            name="Sample Command (Groovy)">
+      </command>
    </extension>
    <extension
          point="org.eclipse.ui.bindings">
@@ -132,6 +137,15 @@
             </or>
          </enabledWhen>
       </handler>
+      <handler
+            class="groovy.expressions.handlers.SampleGroovyHandler"
+            commandId="groovy.expressions.commands.sampleCommandGroovy">
+         <enabledWhen>
+            <groovy using="selection,activePartId">
+            activePartId != "groovy.expressions.navigationView" || selection.size() == 2
+            </groovy>
+         </enabledWhen>
+      </handler>      
    </extension>
    <extension
          point="org.eclipse.ui.menus">
@@ -157,6 +171,12 @@
                   icon="icons/sample.gif"
                   id="groovy.expressions.toolbars.sampleCommand"
                   tooltip="Say hello world">
+            </command>
+            <command
+                  commandId="groovy.expressions.commands.sampleCommandGroovy"
+                  icon="icons/sample.gif"
+                  id="groovy.expressions.toolbars.sampleCommand"
+                  tooltip="Say hello world (groovy)">
             </command>
          </toolbar>
       </menuContribution>
