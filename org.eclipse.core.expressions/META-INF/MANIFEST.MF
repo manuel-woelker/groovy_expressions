@@ -1,0 +1,205 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.4,CDC-1.0/Foundation-1.0,J
+ 2SE-1.3
+Bundle-SymbolicName: org.eclipse.core.expressions; singleton:=true
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.3.0,4.0.0)
+ "
+Bundle-Activator: org.eclipse.core.internal.expressions.ExpressionPlug
+ in
+Export-Package: org.eclipse.core.expressions,org.eclipse.core.internal
+ .expressions;x-internal:=true,org.eclipse.core.internal.expressions.p
+ ropertytester;x-internal:=true,org.eclipse.core.internal.expressions.
+ util;x-internal:=true
+Bundle-Version: 3.4.100.v20090429-1800
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Import-Package: org.w3c.dom
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/core/expressions/ExpressionInfo.class
+SHA1-Digest: hDLRm6a7GlrM+AAD3EgImUi98DA=
+
+Name: org/eclipse/core/expressions/Expression$2.class
+SHA1-Digest: 04uzoj+YTkrsfDrHsJT5p3sjUGM=
+
+Name: org/eclipse/core/expressions/ExpressionConverter.class
+SHA1-Digest: Gxrvu2F9sZqqsytE7vp+NDcbiN4=
+
+Name: org/eclipse/core/internal/expressions/DefinitionRegistry.class
+SHA1-Digest: 5AQP5HMmU/sULjFzb5dDDJW+2Ag=
+
+Name: org/eclipse/core/expressions/IEvaluationContext.class
+SHA1-Digest: m35JjVZEELe5CfBdmEFoyQX7GM4=
+
+Name: org/eclipse/core/internal/expressions/TypeExtension.class
+SHA1-Digest: hg1+bPTTLICOd3rdL+zEjo7Jo5M=
+
+Name: org/eclipse/core/internal/expressions/EqualsExpression.class
+SHA1-Digest: vwBkbLUmcOy450d8T6U7gw5yh7k=
+
+Name: org/eclipse/core/internal/expressions/PropertyCache.class
+SHA1-Digest: SR5exQxVknYJmnwI6iFDpzvg9Fw=
+
+Name: org/eclipse/core/expressions/PropertyTester.class
+SHA1-Digest: vq47eIEPkD4Fy1gKlmg3bhMRoLA=
+
+Name: org/eclipse/core/internal/expressions/TypeExtension$2.class
+SHA1-Digest: 4sVBd0KOKYkc/+Z/nkOLxhViu/o=
+
+Name: org/eclipse/core/expressions/IIterable.class
+SHA1-Digest: guQyZ9BvLxRB4NDpveAxUjVATsg=
+
+Name: org/eclipse/core/expressions/EvaluationResult.class
+SHA1-Digest: DEe0aypxMf8Eya88pBlFQNwZAEs=
+
+Name: org/eclipse/core/expressions/IPropertyTester.class
+SHA1-Digest: mS0ckKHiAcodV6Adzx8L7sKP1kg=
+
+Name: org/eclipse/core/expressions/ICountable.class
+SHA1-Digest: S6OTfckUHYL1YnDRAUh2y2u6eks=
+
+Name: org/eclipse/core/internal/expressions/TestExpression.class
+SHA1-Digest: 4L3Cvvknbs6EQx0G1z1X5HBg2QQ=
+
+Name: org/eclipse/core/internal/expressions/CompositeExpression.class
+SHA1-Digest: cUo2PP164ljevKgvrKoPGZYxTgY=
+
+Name: org/eclipse/core/expressions/ExpressionTagNames.class
+SHA1-Digest: xgOEIJtFL0lcgcVG1Ka53045Yew=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/core/internal/expressions/util/ToStringSorter.class
+SHA1-Digest: yBHYlUjOvGZAjqs9ywIlgTrQo0o=
+
+Name: org/eclipse/core/internal/expressions/CountExpression.class
+SHA1-Digest: gH5B4nP2wjbmlqL+Y93j0iX/lWA=
+
+Name: org/eclipse/core/internal/expressions/Property.class
+SHA1-Digest: hlHtjMjtD61TknYeH3YzNE52vGg=
+
+Name: org/eclipse/core/internal/expressions/EnablementExpression.class
+SHA1-Digest: pbF2YWIv028y2J2hwWJiUSIL+NI=
+
+Name: org/eclipse/core/internal/expressions/NotExpression.class
+SHA1-Digest: aJ4VohxDww42Vt7WMOZMHGR9M08=
+
+Name: org/eclipse/core/internal/expressions/SystemTestExpression.class
+SHA1-Digest: 8OJe61IsvHJgxjrGWjjFteav+n8=
+
+Name: org/eclipse/core/internal/expressions/OrExpression.class
+SHA1-Digest: Wdy1cjSPnWfDiB0qc0L5M2q76x4=
+
+Name: org/eclipse/core/internal/expressions/AndExpression.class
+SHA1-Digest: 6E+r3DhVRktwTB22ZOrzC1fFhTw=
+
+Name: .options
+SHA1-Digest: rmAy3zaZdASQupOOAiUx6YEO8Tw=
+
+Name: org/eclipse/core/expressions/Expression.class
+SHA1-Digest: W7sQfhW6KiSEyAJNBEdeDeYW2C8=
+
+Name: org/eclipse/core/internal/expressions/ExpressionMessages.propert
+ ies
+SHA1-Digest: 7lm3jLriT8CACKCXFpvKM20709w=
+
+Name: org/eclipse/core/internal/expressions/AdaptExpression.class
+SHA1-Digest: jJEtg5kAKWjFcSmBtGkIs8I+Hcs=
+
+Name: org/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntr
+ y.class
+SHA1-Digest: KZEGs/7dBttnSKkAC8n8PTrxN9w=
+
+Name: org/eclipse/core/internal/expressions/ExpressionStatus.class
+SHA1-Digest: 3zVFwZX/mJJ9YEahAozMh2WSPg8=
+
+Name: org/eclipse/core/internal/expressions/ExpressionPlugin.class
+SHA1-Digest: jRwFUPtH3xZwsFhWPhVYv8Xw95w=
+
+Name: org/eclipse/core/expressions/Expression$1.class
+SHA1-Digest: 73hkY40HlO9U3z9+rlgpdeozv34=
+
+Name: org/eclipse/core/internal/expressions/propertytester/PlatformPro
+ pertyTester.class
+SHA1-Digest: 83ljUonX8ixi8LYAEQK5o8AS77w=
+
+Name: org/eclipse/core/expressions/IVariableResolver.class
+SHA1-Digest: NxQvHLAFZTQDA1MCX/upwSIbk2Y=
+
+Name: org/eclipse/core/internal/expressions/IterateExpression$IterateP
+ ool.class
+SHA1-Digest: 1eMVk57ytBJk4GEFHU6RcxKZA5Q=
+
+Name: org/eclipse/core/internal/expressions/ResolveExpression.class
+SHA1-Digest: vPxBe9dwmK+SXeWJix1Z/K0Rw4A=
+
+Name: org/eclipse/core/expressions/ElementHandler.class
+SHA1-Digest: negdE7Ods25Fk2e30/oksgCZlnw=
+
+Name: org/eclipse/core/internal/expressions/Expressions$1.class
+SHA1-Digest: 19K1/v5d1oiJ8bCsbi+zNtwR1CE=
+
+Name: plugin.properties
+SHA1-Digest: yEgqzQ+oHHQXjeLTSPC7DgGaQIE=
+
+Name: org/eclipse/core/internal/expressions/WithExpression.class
+SHA1-Digest: tkT9bEZQ+1HuBQUF70iddnnJ8A8=
+
+Name: org/eclipse/core/internal/expressions/TypeExtension$1.class
+SHA1-Digest: CiUrS6nHZTEcxKfAtiUVwh3skK0=
+
+Name: org/eclipse/core/internal/expressions/IterateExpression.class
+SHA1-Digest: DhylSLpfZo19HiE+C1tCouT/dG4=
+
+Name: org/eclipse/core/internal/expressions/PropertyTesterDescriptor.c
+ lass
+SHA1-Digest: TpNbX/ZDqUDn7laPul7VB+cQBF4=
+
+Name: org/eclipse/core/internal/expressions/ExpressionMessages.class
+SHA1-Digest: IH9/qalWsri7JD6fZsv4I+8mvm4=
+
+Name: org/eclipse/core/internal/expressions/TypeExtensionManager.class
+SHA1-Digest: eZjomphFiZV/3qn0anxuzhm9Bzw=
+
+Name: plugin.xml
+SHA1-Digest: x+oUUS4dLLECrNGDCy2Xw6Z6exQ=
+
+Name: org/eclipse/core/internal/expressions/StandardElementHandler.cla
+ ss
+SHA1-Digest: 8CcZMpRI73tphPRxClQq83cC8Vo=
+
+Name: org/eclipse/core/internal/expressions/Messages.class
+SHA1-Digest: ud04uJBbgmWRLMP81L5nVnJTyeM=
+
+Name: org/eclipse/core/internal/expressions/util/LRUCache.class
+SHA1-Digest: 1BJtjGb8CMcI88P1TOi3MHD095I=
+
+Name: org/eclipse/core/internal/expressions/ReferenceExpression.class
+SHA1-Digest: XdQkFWCpSIzfdqsF/hO2cQuurSM=
+
+Name: org/eclipse/core/internal/expressions/TypeExtensionManager$1.cla
+ ss
+SHA1-Digest: qPN/5U35XN5I3sgkhYJGJC3F7jo=
+
+Name: .api_description
+SHA1-Digest: rKHGTh6ONmj8TAtHjaxW6MVEoII=
+
+Name: about.html
+SHA1-Digest: ejOZra0kypGLQQ2bJtGTX+LI8tU=
+
+Name: org/eclipse/core/expressions/EvaluationContext.class
+SHA1-Digest: 8cF+WYPkC5P5/AnzImOOwQdqrG8=
+
+Name: org/eclipse/core/internal/expressions/InstanceofExpression.class
+SHA1-Digest: vFn8b9ViQ49lT/sUpTVEoBGErHM=
+
+Name: org/eclipse/core/internal/expressions/Expressions.class
+SHA1-Digest: 0h4Z+bhsJLbD4WN6COXMnNswalI=
+
+Name: org/eclipse/core/internal/expressions/DefaultVariable.class
+SHA1-Digest: 4wV/qY3h8NtBzqhec470ahZLibw=
+
