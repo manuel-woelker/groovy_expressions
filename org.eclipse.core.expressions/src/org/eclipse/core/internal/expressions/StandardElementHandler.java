@@ -67,6 +67,8 @@ public class StandardElementHandler extends ElementHandler {
 			return new EqualsExpression(element);
 		} else if (ExpressionTagNames.REFERENCE.equals(name)) {
 			return new ReferenceExpression(element);
+		} else if ("groovy".equals(name)) {
+			return new GroovyExpression(element);
 		}
 		return null;
 	}
